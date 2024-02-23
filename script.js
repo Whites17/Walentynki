@@ -5,41 +5,41 @@ function showMessage(response) {
     const maxWidth = window.innerWidth - nieButton.offsetWidth;
     const maxHeight = window.innerHeight - nieButton.offsetHeight;
 
-    // Set button position to absolute
+    // Ustawienie przycisku na pozycje absolutną
     nieButton.style.position = "absolute";
 
-    // Change image source to "gun.gif"
+    // Zmiana obrazu na "piesel.gif"
     document.getElementsByClassName("image")[0].src = "Obrazy/piesel.gif";
 
-    // Generate random coordinates within the visible container
+    // Generowanie randomowych koordynat z widocznego kontenera 
     const randomX = Math.max(0, Math.floor(Math.random() * maxWidth));
     const randomY = Math.max(0, Math.floor(Math.random() * maxHeight));
 
-    // Apply new coordinates to the button
+    // Dodanie nowych koordynat do przycisku
     nieButton.style.left = randomX + "px";
     nieButton.style.top = randomY + "px";
 
-    // Update text content and hide name message
+    // Zmiana textContent i ukretej wiadomości name
     document.getElementById("question").textContent =
       "PRÓBUJ DALEJ";
     document.getElementById("name").style.display = "none";
 
-    // Optional: You can also add a timeout to reset the position after a few seconds
+  
   }
 
   if (response === "Tak") {
-    // Remove name message and no button
+    // Usuniecie wiadomości "name" i przycisku "nie"
     document.getElementById("name").remove();
     document.getElementById("nie-button").remove();
 
-    // Update text content, show message, and change image source to "dance.gif"
+    // Zmiana tekstu, pokazanie wiadomości i zmiana obrazu na "tulonko.gif"
     const takMessage = document.getElementById("question");
     takMessage.textContent = "NIEDŁUGO SIĘ WIDZIMY ZOSIEŃKA!!! KOCHAM CIĘ NAJMOCNIEJ NA CAŁYM ŚWIECIE❤️❤️❤️";
     takMessage.style.display = "block";
     takMessage.style.fontStyle = "normal";
     document.getElementsByClassName("image")[0].src = "Obrazy/tulonko.gif";
 
-    // Remove yes button
+    // Usuniecię przycisku "Tak"
     document.getElementById("takButton").remove();
   }
 }
