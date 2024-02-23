@@ -9,7 +9,7 @@ function showMessage(response) {
     nieButton.style.position = "absolute";
 
     // Change image source to "gun.gif"
-    document.getElementsByClassName("image")[0].src = "C:/Users/Dell/Desktop/Nowy folder/piesel.gif";
+    document.getElementsByClassName("image")[0].src = "Obrazy/piesel.gif";
 
     // Generate random coordinates within the visible container
     const randomX = Math.max(0, Math.floor(Math.random() * maxWidth));
@@ -37,7 +37,7 @@ function showMessage(response) {
     takMessage.textContent = "NIEDŁUGO SIĘ WIDZIMY ZOSIEŃKA!!! KOCHAM CIĘ NAJMOCNIEJ NA CAŁYM ŚWIECIE❤️❤️❤️";
     takMessage.style.display = "block";
     takMessage.style.fontStyle = "normal";
-    document.getElementsByClassName("image")[0].src = "C:/Users/Dell/Desktop/Nowy folder//tulonko.gif";
+    document.getElementsByClassName("image")[0].src = "Obrazy/tulonko.gif";
 
     // Remove yes button
     document.getElementById("takButton").remove();
