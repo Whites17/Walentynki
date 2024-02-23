@@ -11,7 +11,7 @@ body {
     color: rgb(255, 0, 174);        /* zmiana czcionki */
 
 	
-    background-image:url('C:/Users/Dell/Desktop/Nowy folder/serce.gif');    /* tło*/
+    background-image:url('Obrazy/serce.gif');    /* tło*/
     background-position: center;
 	background-size:cover;
     background-repeat: repeat-y;
