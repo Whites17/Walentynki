@@ -79,10 +79,6 @@ body
     
 }
 
-.hidden-message {
-    display: none;
-    margin-top: 20px;
-}
 
 .move {
     animation: moveNoMessage 0.5s linear;
